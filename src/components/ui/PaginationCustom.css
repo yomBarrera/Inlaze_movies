@@ -1,0 +1,118 @@
+@mixin mobile {
+	@media (max-width: 450px) {
+		@content;
+	}
+}
+
+.Pagination-section {
+	height: 24px;
+	max-width: 360px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.list-page {
+	max-width: 360px;
+	min-width: 210px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: variables.$font1;
+	font-size: 15px;
+	color: var(--color-white);
+}
+.list-page ul {
+	overflow: hidden;
+	overflow-x: scroll;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 0 20px;
+}
+.list-page ul::-webkit-scrollbar {
+	display: none;
+}
+.list-page ul li {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+li.activePage {
+	font-weight: 600;
+}
+
+li.activePage::after {
+	position: absolute;
+	content: '';
+	height: 1px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background: var(--color-white);
+}
+
+.btn-arrow {
+	height: 30px;
+	width: 30px;
+	min-width: 30px;
+	border: 1px solid var(--color-white);
+	border-radius: 100%;
+	cursor: pointer;
+	transition: all 0.25s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-arrow:hover {
+	background: var(--color-white);
+	transition: all 0.25s;
+	color: var(--color-black-2);
+}
+.btn-arrow:hover .icon {
+	background: var(--color-black-2);
+}
+
+.btn-arrow .icon {
+	height: 20px;
+	width: 20px;
+	background: var(--color-white);
+	transition: all 0.25s;
+}
+.icon.icon-leftArrow {
+	margin-right: -1px;
+}
+
+.icon.icon-rightArrow {
+	margin-left: -1px;
+}
+
+.pages {
+	min-width: 120px;
+	width: 220px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--color-white);
+	filter: blur(0.3px);
+}
+.pages span.pgs {
+	min-width: max-content;
+}
+.pages span.current-page {
+	height: 100%;
+	min-width: 33px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	border: 1px solid var(--color-white);
+	margin-left: 5px;
+	margin-right: 6px;
+}

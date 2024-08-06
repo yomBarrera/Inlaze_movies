@@ -1,0 +1,42 @@
+.form {
+	padding: 15px;
+	color: var(--color-text);
+}
+.form span {
+	font-size: 16px;
+	display: block;
+	margin-bottom: 19px;
+}
+.form label {
+	position: relative;
+	display: block;
+	max-width: 228px;
+}
+.form input {
+	padding: 5px 40px 5px 19px;
+	height: 44px;
+	width: 100%;
+	background: var(--color-black-2);
+	border: none;
+}
+.form span {
+	display: block;
+}
+
+.buton {
+	border: none;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 8px;
+	top: 54%;
+	height: 30px;
+	width: 30px;
+}
+
+.icon-search {
+	height: 15px;
+	width: 15px;
+}

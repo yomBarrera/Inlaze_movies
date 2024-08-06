@@ -1,0 +1,19 @@
+.content {
+	padding: 25px 0 25px 25px;
+}
+.subtitle {
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 26px;
+	margin-bottom: 20px;
+}
+.nomovies {
+	height: 300px;
+	display: grid;
+	align-content: center;
+	margin: auto auto;
+}

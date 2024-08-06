@@ -1,0 +1,85 @@
+.filter {
+	background: linear-gradient(
+		0.87deg,
+		#000000 19.5%,
+		rgba(102, 102, 102, 0) 99.2%
+	);
+
+	width: 100%;
+	position: absolute;
+	height: 436px;
+	filter: var(--filter-banner);
+}
+
+.text {
+	width: 63%;
+	position: absolute;
+	top: 52%;
+	left: 4%;
+}
+.text h3 {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+.text p {
+	font-size: 20px;
+}
+.infobar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: var(--color-white);
+	height: 85px;
+	padding: 0 56px;
+}
+.info ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 10px;
+	gap: 10px;
+	isolation: isolate;
+	font-size: 14px;
+	gap: 104px;
+	margin: 0 11px;
+}
+.info ul li {
+	cursor: pointer;
+}
+.info ul li {
+	cursor: pointer;
+}
+.info ul li:hover {
+	color: var(--color-check-hover);
+}
+.action {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	gap: 70px;
+}
+.action button {
+	border: none;
+}
+
+.icon-favorite:hover {
+	background: var(--color-fav-hover);
+}
+.icon-favorite:active {
+	background: var(--color-fav-active);
+}
+.icon-checkbook:hover {
+	background: var(--color-check-hover);
+}
+.icon-checkbook:active {
+	background: var(--color-check-active);
+}
+.icon-share:active,
+.icon-share:hover {
+	background: var(--color-share-hover);
+}

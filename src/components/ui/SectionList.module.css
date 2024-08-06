@@ -1,0 +1,15 @@
+.subtitle {
+	margin-bottom: 15px;
+}
+.list {
+	width: calc(1440px - 285px);
+	display: flex;
+	gap: 24px;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none;
+	margin-bottom: 40px;
+}
+.list::-webkit-scrollbar {
+}
